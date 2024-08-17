@@ -1,0 +1,25 @@
+.card-header {
+  background-color: rgba(0, 0, 0, 0.377) !important;
+  font-size: xx-large !important;
+}
+
+.card img {
+  height: 350px;
+}
+
+.card-text {
+  height: 300px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  background-color: var(--background-color) !important;
+  border-color: var(--accent-color);
+}
+
+.btn:hover {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color) !important;
+}
