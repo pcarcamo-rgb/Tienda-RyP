@@ -8,7 +8,6 @@
 }
 
 .card-text {
-  height: 420px !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
