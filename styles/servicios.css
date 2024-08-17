@@ -14,12 +14,12 @@
   justify-content: center;
 }
 
-.btn {
+.card .btn {
   background-color: var(--background-color) !important;
   border-color: var(--accent-color);
 }
 
-.btn:hover {
+.card .btn:hover {
   border-color: var(--accent-color);
   background-color: var(--accent-color) !important;
 }
