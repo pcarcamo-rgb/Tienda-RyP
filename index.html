@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TIENDA TYP</title>
+    <meta
+      name="description"
+      content="Tienda RYP - Todo lo que necesitas, en un solo lugar. Ofrecemos productos y servicios como impresiones, electrónica, estampados y más."
+    />
+    <meta
+      name="keywords"
+      content="tienda, servicios, impresiones, electrónica, estampados, productos"
+    />
+    <meta name="author" content="Tienda RYP" />
+    <title>Tienda RYP - Impresiones, Electrónica y Estampados</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,15 +24,18 @@
   </head>
   <body>
     <header>
-      <!--NAV-->
       <nav
         class="navbar navbar-expand-lg border-bottom border-body"
         data-bs-theme="dark"
       >
         <div class="container-fluid">
-          <a class="navbar-brand">
-            <img src="assets/logo.svg" style="height: 40px; width: 40px" />
-            TIENDA RYP
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/logo.svg"
+              alt="Logo de Tienda RYP"
+              style="height: 40px; width: 40px"
+            />
+            Tienda RYP
           </a>
           <button
             class="navbar-toggler"
@@ -38,7 +50,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
               <a class="nav-link" href="pages/sobre-nosotros.html"
                 >Sobre Nosotros</a
               >
@@ -51,12 +63,14 @@
       </nav>
     </header>
 
-    <!--CONTENIDO-->
     <main>
-      <section class="main-image">
-        <h1><img src="assets/logo.svg" alt="RYP Logo" /> RYP Tienda</h1>
+      <section class="main-image text-center">
+        <h1>
+          <img src="assets/logo.svg" alt="Logo de Tienda RYP" /> RYP Tienda
+        </h1>
         <h2>Todo lo que necesitas, en un solo lugar.</h2>
       </section>
+
       <section class="servicios-container">
         <div class="card">
           <h3>Impresiones</h3>
@@ -65,16 +79,16 @@
             una variedad de tamaños de papel y opciones en papel fotográfico de
             alta calidad.
           </p>
-          <button class="btn">Saber Mas</button>
+          <a href="pages/servicios.html" class="btn">Saber Más</a>
         </div>
 
         <div class="card">
-          <h3>Electronica</h3>
+          <h3>Electrónica</h3>
           <p>
             Ofrecemos una amplia gama de productos electrónicos, incluyendo
             parlantes, cargadores, auriculares, cables USB y más.
           </p>
-          <button class="btn">Saber Mas</button>
+          <a href="pages/servicios.html" class="btn">Saber Más</a>
         </div>
 
         <div class="card">
@@ -83,29 +97,26 @@
             Ofrecemos servicios de estampado en tazas, camisetas, vasos y más,
             garantizando diseños de alta calidad y durabilidad.
           </p>
-          <button class="btn">Saber Mas</button>
+          <a href="pages/servicios.html" class="btn">Saber Más</a>
         </div>
       </section>
     </main>
 
-    <!--FOOTER-->
     <footer class="footer text-white text-center" data-bs-theme="dark">
       <div class="container-fluid">
-        <!-- Sección: Redes Sociales -->
         <div class="mb-4">
-          <a href="#" class="btn">
+          <a href="#" class="btn" aria-label="Facebook Tienda RYP">
             <img src="assets/facebook.svg" alt="Facebook" />
           </a>
-          <a href="#" class="btn">
+          <a href="#" class="btn" aria-label="Instagram Tienda RYP">
             <img src="assets/instagram.svg" alt="Instagram" />
           </a>
-          <a href="#" class="btn">
+          <a href="#" class="btn" aria-label="Whatsapp Tienda RYP">
             <img src="assets/whatsapp.svg" alt="Whatsapp" />
           </a>
         </div>
-        <!-- Sección: Texto -->
         <div class="text-center p-3">
-          &copy; 2024 Tienda RyP. Todos los derechos reservados.
+          &copy; 2024 Tienda RYP. Todos los derechos reservados.
         </div>
       </div>
     </footer>

@@ -11,6 +11,7 @@
 body {
   background-color: var(--background-color) !important;
   color: var(--text-color) !important;
+  font-family: var(--font-secondary);
 }
 
 .navbar,
@@ -18,16 +19,55 @@ body {
   background-color: var(--background-color) !important;
 }
 
+.navbar-nav {
+  .nav-link {
+    font-family: var(--font-secondary);
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.1rem;
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: var(--accent-color);
+      color: var(--background-color) !important;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+.activeLink {
+  background-color: var(--accent-color) !important;
+  color: var(--background-color) !important;
+  border-radius: 0.5rem;
+}
+
 .footer {
   border-top: 1px solid var(--text-color) !important;
   padding-top: 1rem !important;
   align-items: center !important;
+
+  .btn {
+    img {
+      width: 30px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  p {
+    font-family: var(--font-secondary);
+    font-size: 0.9rem;
+  }
 }
 
 .main-image {
   width: 100%;
   height: 80vh;
-  background-image: url(assets/sanju-pandita-ZYrhWxIuEqQ-unsplash.jpg);
+  background-image: url(assets/sanju-pandita-ZYrhWxIuEqQ-unsplash.webp);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -58,6 +98,27 @@ body {
   }
 }
 
+/* Tarjetas de 'Nuestra Historia', 'Lo que hacemos' y 'Nuestro compromiso' */
+.card-about {
+  background-color: rgba(48, 43, 46, 0.8);
+  padding: 2rem;
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h2 {
+    font-family: var(--font-primary);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 1rem;
+    color: var(--accent-color);
+  }
+}
+
 .servicios-container {
   display: flex;
   justify-content: center;
@@ -76,9 +137,9 @@ body {
     color: var(--text-color) !important;
     box-shadow: var(--box-shadow);
     width: 30%;
-    height: 30vh;
     text-align: center;
     padding: 1rem;
+    transition: transform 0.3s;
 
     h3 {
       font-family: var(--font-secondary);
@@ -92,9 +153,9 @@ body {
       font-size: 1rem;
     }
 
-    button {
-      background-color: var(--accent-color);
-      color: var(--text-color);
+    .btn {
+      background-color: var(--accent-color) !important;
+      color: var(--text-color) !important;
       padding: 0.625rem;
       border: none;
       font-size: 1rem;
@@ -153,11 +214,11 @@ body {
 
   .servicios-container {
     padding: 1rem;
+  }
 
-    .card {
-      width: 100%;
-      height: auto;
-    }
+  .servicios-container .card {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -169,3 +230,5 @@ body {
     left: 0 !important;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
